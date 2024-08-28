@@ -14,7 +14,7 @@ project(HunterSimple)
 ### Download dependencies ###
 hunter_add_package(GTest)
 ### Find dependencies ###
-find_package(GTest CONFIG REQUIRED) # GTest::main
+find_package(GTest CONFIG REQUIRED) # GTest::gtest_main
 
 
 ### Targets ###

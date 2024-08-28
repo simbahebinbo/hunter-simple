@@ -9,4 +9,5 @@ _builds/*
 _install/*
 cmake-build-debug
 build
+.idea
 
