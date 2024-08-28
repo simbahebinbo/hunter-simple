@@ -1,13 +1,10 @@
-# Copyright (c) 2014-2016, Ruslan Baratov
-# All rights reserved.
-
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.12)
 
 ### Hunter snapshot that will be used ###
 include("cmake/HunterGate.cmake")
 HunterGate(
-    URL "https://github.com/ruslo/hunter/archive/v0.23.111.tar.gz"
-    SHA1 "4189bbd869abe4eb69b5303d3f916c03d34dc154"
+        URL "https://github.com/cpp-pm/hunter/archive/v0.25.6.tar.gz"
+        SHA1 "69e4a05bd514bb05cb2c5aa02ce8ac420516aaf7"
 )
 
 project(HunterSimple)
