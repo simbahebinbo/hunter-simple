@@ -7,17 +7,19 @@ HunterGate(
         SHA1 "69e4a05bd514bb05cb2c5aa02ce8ac420516aaf7"
 )
 
+cmake_policy(SET CMP0144 NEW)
+
 project(HunterSimple)
 
 ### Download dependencies ###
 hunter_add_package(GTest)
-
 ### Find dependencies ###
 find_package(GTest CONFIG REQUIRED) # GTest::main
 
+
 ### Targets ###
 add_executable(simple simple.cpp)
-target_link_libraries(simple PUBLIC GTest::main)
+target_link_libraries(simple PUBLIC  GTest::gtest_main)
 
 ### Testing ###
 enable_testing()
